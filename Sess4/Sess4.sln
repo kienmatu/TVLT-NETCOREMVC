@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sess4", "Sess4\Sess4.csproj", "{12424E91-D4B1-406C-895E-E230CA9E403D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12424E91-D4B1-406C-895E-E230CA9E403D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12424E91-D4B1-406C-895E-E230CA9E403D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12424E91-D4B1-406C-895E-E230CA9E403D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12424E91-D4B1-406C-895E-E230CA9E403D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D49C2DE9-5FEA-4FA8-8943-3F793D8FD1E7}
+	EndGlobalSection
+EndGlobal
