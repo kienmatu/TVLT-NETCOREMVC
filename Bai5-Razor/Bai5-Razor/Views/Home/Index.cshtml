@@ -1,0 +1,62 @@
+﻿@model IEnumerable<Student>
+@{
+    ViewData["Title"] = "Home Page";
+    //Layout = null;
+}
+
+<h1>HOME PAGE XIN CHÀO CÁC BẠN</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Tên</th>
+            <th scope="col">Tuổi</th>
+            <th scope="col">Phải đi tù chưa</th>
+            <th scope="col">Đang học cấp mấy</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            string grade = "";
+            switch(item.age)
+            {
+                case int intvalue when intvalue > 6 && intvalue < 10:
+                    grade = "cấp 1";
+                    break;
+                case int intvalue when intvalue >= 10 && intvalue < 15:
+                    grade = "cấp 2";
+                    break;
+                case int intvalue when intvalue >= 15 && intvalue <= 18:
+                    grade = "cấp 3";
+                    break;
+                case int intvalue when intvalue > 18:
+                    grade = "đại học";
+                    break;
+                default:
+                    grade = "not define";
+                    break;
+            }
+        <tr>
+            <td>@item.name</td>
+            <td>@item.age</td>
+            <td>@(item.age >= 18 ? "Đủ tuổi dồi" : "Chưa đủ tuổi")</td>
+            <td>@grade</td>
+        </tr>
+        }
+
+    </tbody>
+</table>
+<br />
+@ViewBag.loichao2 <br />
+@ViewData["loichao"]
+<br />
+@{ 
+    var std = ViewData["std"] as Student;
+}
+@std.name <br />
+@std.age
+<br />
+
+@ViewBag.hocsinh.name - @ViewBag.hocsinh.age
