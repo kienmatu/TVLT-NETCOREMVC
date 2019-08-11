@@ -1,0 +1,14 @@
+﻿@model Post
+@{
+    ViewData["Title"] = Model.PostTitle;
+}
+
+<h2>@Model.PostTitle</h2>
+<p style="color:darkgray;font-size:14px">@Model.PostTeaser</p>
+<div style="text-align:center">
+    <img src="@Model.AvatarImage" alt="@Model.PostTitle"/>
+</div>
+<div>
+    @Model.PostContent
+</div>
+
